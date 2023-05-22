@@ -1,0 +1,12 @@
+language: java
+jdk:
+  - openjdk17
+
+script:
+  - ./gradlew check
+
+
+deploy:
+  provider: heroku
+  api_key: "f6ea64e0-d4aa-4519-ba12-788176d379d3"
+  app: "book-store-app-backend"
